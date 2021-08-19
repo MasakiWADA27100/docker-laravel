@@ -28,6 +28,11 @@ services:
     ports:
       - '8081:80'
 
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+
 volumes:
   db-store:
     
